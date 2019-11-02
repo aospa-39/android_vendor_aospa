@@ -196,6 +196,10 @@ $(call inherit-product, device/qcom/common/common.mk)
 PRODUCT_PRODUCT_PROPERTIES += \
     persist.sys.disable_rescue=true
 
+# Root
+PRODUCT_PACKAGES += \
+    adb_root
+
 # Sensitive Phone Numbers
 ifneq ($(TARGET_NO_TELEPHONY), true)
 PRODUCT_COPY_FILES += \
