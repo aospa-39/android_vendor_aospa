@@ -52,5 +52,11 @@
         "repository": "aospa-39/android_packages_apps_Settings",
         "target_path": "packages/apps/Settings",
         "revision": "uvite"
+    },
+    {
+        "remote": "github",
+        "repository": "aospa-39/android_packages_apps_Updater",
+        "target_path": "packages/apps/Updater",
+        "revision": "uvite"
     }
 ]

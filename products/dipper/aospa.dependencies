@@ -71,5 +71,11 @@
         "target_path":  "prebuilts/clang-standalone",
         "revision":     "17",
         "clone-depth":  "1"
+    },
+    {
+        "remote": "github",
+        "repository": "aospa-39/android_packages_apps_Updater",
+        "target_path": "packages/apps/Updater",
+        "revision": "uvite"
     }
 ]

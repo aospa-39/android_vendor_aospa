@@ -261,6 +261,19 @@ PRODUCT_PACKAGES += \
     libtextclassifier_actions_suggestions_universal_model \
     libtextclassifier_lang_id_model
 
+# Updater
+PRODUCT_PACKAGES += \
+    Updater \
+    update_engine \
+    update_verifier \
+    update_engine_sideload
+
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    aospa.updater.allow_downgrading=true
+
+PRODUCT_COPY_FILES += \
+    vendor/aospa/target/config/init/init.aospa-updater.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.aospa-updater.rc
+
 # WiFi
 PRODUCT_PACKAGES += \
     libwpa_client
